@@ -71,4 +71,4 @@ var interval;
 
 
 });
-client.login(config.token);
+client.login(process.env.token);
