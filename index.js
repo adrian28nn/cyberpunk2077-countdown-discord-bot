@@ -40,7 +40,7 @@ var interval;
   	message.delete(message.content);
   	if(!zile || !ore || !minute || !timerchannelID) return message.reply("[CountDown System]\nSyntax: /countdown <channel ID> <days> <hours> <minutes>").then(msg => {msg.delete(5000)});
         const countdown = new Discord.RichEmbed()
-      .setColor("#f7df1e")      
+      .setColor("#980000")      
       .setAuthor('Countdown to the Cyberpunk 2077 release date')                        
       .addField(`Time left: `, `**Days**: ${zile}, **Hours**: ${ore}, **Minutes**: ${minute}`)
       .setFooter(`This is a countdown to the release day. The actual hour can vary.`)
@@ -59,7 +59,7 @@ var interval;
                         totals = totals - ore*3600;
                         minute = Math.floor(totals/60);
                         sendmsg.edit(new Discord.RichEmbed()
-                        .setColor("#f7df1e")  
+                        .setColor("#980000")  
                         .setAuthor('Countdown to the Cyberpunk 2077 release date')                        
                         .addField(`Time left: `, `**Days**: ${zile}, **Hours**: ${ore}, **Minutes**: ${minute}`)
                         .setFooter(`This is a countdown to the release day. The actual hour can vary.`)
